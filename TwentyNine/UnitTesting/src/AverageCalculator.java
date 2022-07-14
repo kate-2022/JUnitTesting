@@ -8,8 +8,8 @@ public class AverageCalculator {
 		
 		for (double singleNumber:numbers) {
 			sum += singleNumber;
-	    	sum = sum/size;	
 		}
+	    	sum = sum/size;			
 		return sum;
 	}
 		
