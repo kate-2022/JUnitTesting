@@ -1,4 +1,3 @@
-
 public class AverageCalculator {
 	
 	public double calculateAverage (double[] numbers) {
@@ -9,7 +8,8 @@ public class AverageCalculator {
 		for (double singleNumber:numbers) {
 			sum += singleNumber;
 		}
-	    	sum = sum/size;			
+	    	
+		sum = sum/size;	
 		return sum;
 	}
 		
