@@ -8,12 +8,9 @@ public class AverageCalculator {
 		
 		for (double singleNumber:numbers) {
 			sum += singleNumber;
-			return sum;}
-		
-		sum = sum/size;	
-		return sum; 
-		
+	    	sum = sum/size;	
+		}
+		return sum;
 	}
 		
 	}
-
