@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 
 public class MedianCalculator {
@@ -8,19 +8,19 @@ public class MedianCalculator {
 		double[] numbersCloned = (double[])numbers.clone();
 		Arrays.sort(numbersCloned);
 		int size = numbersCloned.length;
-		int mid = size/2;
+		int mid = size/2;     
 	  	
-		if (size %2 !=0) {		
+		if (size %2 !=0) {		   
 			return numbersCloned[mid];	
 		}
 		
-		if (size %2 ==0) {
-			return numbersCloned[(mid + mid-1)/2];	
+		else {    
+			int midValue1 = (int) numbersCloned[mid];
+			int midValue2 = (int) numbersCloned[mid - 1];
+			return (midValue1 + midValue2)/2;                      
 			
 		}
-			return numbersCloned[mid];
 	
-		
 	}
 
 }
